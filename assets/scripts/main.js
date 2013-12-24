@@ -54,7 +54,7 @@ function setupLevel2(element) {
 	if(!element.length>0){
 		return
 	}
-	console.log("level 2");
+
 	var maxHeight = 0;
 	var childs = $(element.find(' > li'));
 	var hasLevel3 = false;
