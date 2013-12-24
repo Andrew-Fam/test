@@ -157,7 +157,7 @@ function setupLevel2(element) {
 	var marginLeft = $(element).parent().position().left;
 
 	if(marginLeft+$(element).outerWidth()<$('#main_Nav').width()){
-		$(element).css('margin-left',marginLeft-50);
+		$(element).css('margin-left',marginLeft);
 	}
 
 }
