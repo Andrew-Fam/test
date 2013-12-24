@@ -1,5 +1,6 @@
 body {
   position: relative;
+  overflow-x: hidden;
 }
 ul {
   font-family: "Helvetica", "Arial", sans-serif;
@@ -86,7 +87,7 @@ ul.top-bar-nav > li.selected .decor-arrow {
 }
 ul.top-bar-nav > li:hover ul.level2,
 ul.top-bar-nav > li.selected ul.level2 {
-  visibility: visible;
+  display: inline-block;
   position: absolute;
   left: 0;
   top: 140%;
@@ -112,8 +113,7 @@ ul.top-bar-nav > li .decor-arrow {
   margin-left: -11.5px;
 }
 ul.top-bar-nav > li ul.level2 {
-  display: inline-block;
-  visibility: hidden;
+  display: none;
   position: absolute;
   background: grey;
   padding: 2px;
