@@ -1,6 +1,12 @@
 body {
   position: relative;
-  overflow-x: hidden;
+}
+#test {
+  border-radius: 15px;
+  width: 200px;
+  height: 50px;
+  background-color: grey;
+  behavior: url(../scripts/border-radius.htc);
 }
 ul {
   font-family: "Helvetica", "Arial", sans-serif;
@@ -31,7 +37,6 @@ ul.top-bar-nav > li {
   -webkit-border-radius: 7px 7px 0px 0px;
   -moz-border-radius: 7px 7px 0px 0px;
   border-radius: 7px 7px 0px 0px;
-  behavior: url('../scripts/PIE.htc');
   display: inline-block;
   zoom: 1;
   *display: inline;
@@ -95,6 +100,8 @@ ul.top-bar-nav > li.selected .decor-arrow {
 ul.top-bar-nav > li:hover ul.level2,
 ul.top-bar-nav > li.selected ul.level2 {
   display: inline-block;
+  zoom: 1;
+  *display: inline;
   position: absolute;
   left: 0;
   top: 140%;
@@ -129,7 +136,6 @@ ul.top-bar-nav > li ul.level2 {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
-  behavior: url('../scripts/PIE.htc');
   background: #d5ecef;
   /* Old browsers */
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -152,6 +158,8 @@ ul.top-bar-nav > li ul.level2 {
 ul.top-bar-nav > li ul.level2 > li {
   position: relative;
   display: inline-block;
+  zoom: 1;
+  *display: inline;
   vertical-align: top;
   min-width: 250px;
   background-image: url('../images/border-right_07.png');
@@ -165,13 +173,11 @@ ul.top-bar-nav > li ul.level2 > li.first > a {
   -moz-border-radius: 8px 0px 0px 0px;
   -webkit-border-radius: 8px 0px 0px 0px;
   border-radius: 8px 0px 0px 0px;
-  behavior: url('../scripts/PIE.htc');
 }
 ul.top-bar-nav > li ul.level2 > li.last > a {
   border-radius: 0px 8px 0px 0px;
   -moz-border-radius: 0px 8px 0px 0px;
   -webkit-border-radius: 0px 8px 0px 0px;
-  behavior: url('../scripts/PIE.htc');
 }
 ul.top-bar-nav > li ul.level2 > li > a {
   color: white;
@@ -222,6 +228,8 @@ ul.top-bar-nav > li ul.level2 > li ul.level3 > li ul.level4 > li {
 }
 ul.top-bar-nav > li ul.level2 > li ul.level3 > li ul.level4 > li > a {
   display: inline-block;
+  zoom: 1;
+  *display: inline;
 }
 ul.top-bar-nav > li ul.level2 > li ul.level3 > li ul.level4 > li > a span:first-child {
   font-size: 10px;

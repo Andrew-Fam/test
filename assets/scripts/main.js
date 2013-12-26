@@ -157,9 +157,13 @@ function setupLevel2(element) {
 	// calculate position to align the submenu to its parent selector when appropriate
 
 	var marginLeft = $(element).parent().position().left;
-
-	if(marginLeft+$(element).outerWidth()<$('#main_Nav').width()){
+	console.log(marginLeft);
+	console.log($(element).outerWidth());
+	console.log($('#main_Nav').width());
+	if(marginLeft + $(element).outerWidth() < $('#main_Nav').width()){
 		$(element).css('margin-left',marginLeft);
+	}else {
+		$(element).css('margin-left',$('#main_Nav').width()-$(element).outerWidth());
 	}
 
 }
