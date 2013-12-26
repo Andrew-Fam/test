@@ -1,5 +1,7 @@
 $(document).ready(function(){
-
+	// fix gradient for IE9 
+	$('.top-bar-nav > li, ul.level2').addClass('gradient');
+	//
 	$(document).click(function(){
 		$('#main_Nav > li').removeClass('selected');
 	});
